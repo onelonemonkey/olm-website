@@ -1,0 +1,49 @@
+---
+title: Alan White - Front End Web Developer - One Lone Monkey 
+description: Test description
+layout: skeleton
+---
+
+<div class="sixteen columns clearfix">
+
+	<div class="two columns alpha">
+		<%= image_tag 'logo-monkey-circle.png', :class => 'scale-with-grid' %>
+	</div>
+
+	<div class="fourteen">
+		<h1 class="remove-bottom" style="margin-top: 40px">One Lone Monkey - moo</h1>
+	</div>
+
+	<hr />
+</div>
+
+
+<% data.portfolio.sites.each do |site| %>
+
+	<div class="row clearfix">
+
+	  	<div class="nine columns alpha">
+	  		<%= image_tag site["img"], :class => 'scale-with-grid' %>
+	  	</div>
+
+	  	<div class="seven columns omega">
+	  		
+	  		<h3><%= site["name"] %> - <a href="<%= site["address"] %>"><%= site["address"] %></a></h3>
+
+	  		<h4>Sub Heading</h4>
+
+	  		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+	  	</div>
+
+	</div>
+
+	<div class="sixteen columns clearfix">
+
+		<hr>
+
+	</div>
+
+
+<% end %>
+
