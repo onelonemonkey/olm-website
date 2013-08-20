@@ -1,8 +1,0 @@
-slides:
-    - image: "/img/slider/slide1.jpg"
-      image_alt: "Slide 1 alt text"
-      caption: "Slide 1 caption"
-
-    - image: "/img/slider/slide2.jpg"
-      image_alt: "Slide 2 alt text"
-      caption: "Slide 2 caption"
